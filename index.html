@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+	
+		h1 {
+    text-align: center;
+    font-family: Impact;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: 2pt 2pt 2pt red;
+    width: 100vw;
+}
+
+h2 {
+    text-align: center;
+    font-family: Impact;
+    font-size: 2.5rem;
+    text-shadow: 2pt 2pt 2pt red;
+    width: 100vw;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 1.25rem;
+    width: 100vw;
+    height: 100vh;
+    line-height: 175%;
+}
+		
+		
+		body {background: lightgray;}
+		
+		#banner {
+			width: 99vw;
+		}
+		
+		
+			
+		.wrap-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+		
+		#header {
+			margin: 0 0 0 10px;
+			width: 40vw;
+		}
+		
+		
+		
+		@keyframes rise {
+    from {
+        transform: translateY(500px);
+        opacity: .5;
+    }
+    to {
+        transform: translateY(-1800px);
+        opacity: 1;
+    }
+}
+		
+		.rise-image {
+    animation-name: rise;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; 
+		animation-iteration-count: infinite;
+}
+		
+		
+	
+	</style>
+</head>
+
+	
+	
+	<body>
+		
+	<div id="text-controls">
+  <button id="increase-text">+</button>
+  <button id="decrease-text">-</button>
+  <button id="reset-text">Reset</button>
+</div>
+	
+<div>
+	
+<h1> 
+Game Design Elements
+</h1>
+	
+	
+	</div>
+	
+	<div>
+	
+		<img src="Binary Banner.jpg" id="banner">
+	
+	</div>
+	
+	<div>
+	
+		<h2>
+		Coding, Creating, Constructing
+		
+		</h2>
+		
+		
+		
+		
+	</div>
+	
+	<div>
+	
+		<img src="VideoGameOnTV.jpg" id="header" class="wrap-right">
+	
+		<p>
+		The main game design elements include Coding, Creating, and Constructing, the 3 C's. Coding is the actual brain of the game. It is what tells the game to perform an action when you press a button, it is what makes the game work and function. Creating is the Design part of the game. It is the creation of characters, enemies, music, levels, or whatever else your game may contain. After all a game has to have some sort of something in it or else it isn't much of a game. Lastly is Constructing, which is the unison and Coding and Creating. Its one thing to make a bunch of assets and code and actually making them interact with one another correctly. nce you make your characters and they perform everything you want them to, you have to make sure they work with everything else. You have to make sure everything works, all your characters and enemies, and menus, everything. But once you have made everything and gotten it to work in unison, then, you have a game, no matter how small, how big, how simple, or how complex.
+		</p>
+		
+		
+		
+		
+	</div>
+	
+	<div>
+	
+	
+	<img src="Computer Icon.png" class="rise-image">
+		
+	
+	</div>
+
+		<script>
+$(document).ready(function () {
+    let scale = 1;
+
+    $("#increase-text").click(function () {
+        scale += 0.1;
+        $("html").css("font-size", (100 * scale) + "%");
+    });
+
+    $("#decrease-text").click(function () {
+        scale -= 0.1;
+        $("html").css("font-size", (100 * scale) + "%");
+    });
+
+    $("#reset-text").click(function () {
+        scale = 1;
+        $("html").css("font-size", "100%");
+    });
+});
+			
+</script>
+		
+		</body>
+	
+</html>
