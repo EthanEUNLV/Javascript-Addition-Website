@@ -15,7 +15,31 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
-	
+
+.fancy-btn {
+  display: inline-block;
+  padding: 15px 30px;       
+  font-size: 18px;         
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.fancy-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+
+
+.fancy-btn:active {
+  transform: scale(0.98);
+}
+		
 		h1 {
     text-align: center;
     font-family: Impact;
@@ -87,7 +111,13 @@ p {
 	</style>
 </head>
 
-	
+	<button class="fancy-btn" onclick="window.location.href='https://ethaneunlv.github.io/Wolf-In-Sheeps-Clothing-Font-Showcase/'">
+  Visit Font Showcase
+</button>
+
+<button class="fancy-btn" onclick="window.location.href='https://ethaneunlv.github.io/Grid-Portfolio/'">
+  Visit Portfolio
+</button>
 	
 	<body>
 		
@@ -169,12 +199,6 @@ $(document).ready(function () {
 		
 		</body>
 
-<button onclick="window.location.href='https://ethaneunlv.github.io/Wolf-In-Sheeps-Clothing-Font-Showcase/'">
-  Visit Font Showcase
-</button>
 
-<button onclick="window.location.href='https://ethaneunlv.github.io/Grid-Portfolio/'">
-  Visit Portfolio
-</button>
 	
 </html>
